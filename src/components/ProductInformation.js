@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import '../css/StyleProductInformation.css';
 import { addCartThunk } from '../redux/actions';
+import swal from 'sweetalert';
 
 
 const ProductInformation = ({product}) => {
@@ -19,6 +20,12 @@ const ProductInformation = ({product}) => {
         if(localStorage.getItem("token") !== ""){
             const producto = {"id": product.id, "quantity": number}
             dispatch(addCartThunk(producto));
+            swal({
+                title: "Success",
+                text: "successfully added to cart",
+                icon: "success",
+                buttons: "Ok"
+            })
         }else{
             navigate("/singin");
         }

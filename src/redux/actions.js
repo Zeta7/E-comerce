@@ -83,12 +83,6 @@ export const addCartThunk = product =>{
         dispatch(setIsLoading(true));
         return axios.post('https://ecommerce-api-react.herokuapp.com/api/v1/cart', product, getConfigToken())
         .then(res=>{
-            swal({
-                title: "Success",
-                text: "successfully added to cart",
-                icon: "success",
-                buttons: "Ok"
-            })
         })
         .finally(()=> dispatch(setIsLoading(false)))
     }
