@@ -1,0 +1,74 @@
+.container-category{
+    width: 250px !important;
+    height: 350px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 100px;
+    
+}
+.cont-category{
+    width: 230px;
+    border-bottom: 1px solid #c3c3c3;
+    padding: 15px 10px;
+    margin: 0px 10px;
+}
+.cont-category span{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.cont-category span p{
+    font-size: 15px;
+}
+.cont-category span i{
+    color: var(--primary);
+}
+.cont-category form{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.cont-category form input{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 0px 10px;
+}
+.cont-category form button{
+    width: 100px;
+    height: 25px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+.cont-category .item-category-name{
+    margin-top: 10px;
+    width: 100px;
+    height: 25px;
+    padding-left: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #868484;
+}
+.cont-category .item-category-name:hover{
+    padding-left: 12px;
+    border-left: 3px solid var(--primary);
+}
+

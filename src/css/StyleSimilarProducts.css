@@ -1,0 +1,10 @@
+.container-similar-category{
+    width: 90vw;
+    margin-top: 20px;
+}
+.cont-products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 5;
+}

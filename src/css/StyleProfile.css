@@ -1,0 +1,67 @@
+.container-profile-dad{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-child-profile-1{
+    margin-top: 110px;
+    width: 70%;
+    height: auto;
+    background-color: white;
+    border-radius: 2px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.container-profile-dad .cont-child-profile{
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container-profile-dad .cont-child-profile h3{
+    font-size: 15px;
+    display: inline-block;
+    color: #9f9f9f;
+
+}
+.container-profile-dad .cont-child-profile h3 span{
+    font-size: 13px;
+    color: #000000;
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+.container-profile-dad .const-child-profile-pucharses{
+    position: relative;
+    width: 70%;
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px 20px;
+    border-radius: 2px;
+}
+.container-profile-dad .const-child-profile-pucharses h2{
+    position: absolute;
+    top: 2px;
+    left: 60px;
+    font-size: 20px;
+    color: #555555;
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 5px;
+}
+.container-profile-dad .const-child-profile-pucharses .cont-pucharses-profile{
+    width: 100%;
+    height: auto;
+    border: 1px solid #b3b2b2;
+    border-radius: 2px;
+    padding: 20px;
+}
+.container-profile-dad .const-child-profile-pucharses .cont-pucharses-profile p{
+    color: #3c3a3a;
+    font-size: 12px;
+}

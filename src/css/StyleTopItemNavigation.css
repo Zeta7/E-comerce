@@ -1,0 +1,17 @@
+.cont-child-nav-product-detail{
+    display: flex;
+}
+.cont-child-nav-product-detail a{
+    color: black;
+    text-decoration: none;
+}
+.cont-child-nav-product-detail li{
+    color: #f85555;
+    margin-left: 15px;
+}
+.cont-child-nav-product-detail p{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}

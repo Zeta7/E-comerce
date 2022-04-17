@@ -1,0 +1,32 @@
+.container-dad-product-detail-p-1{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-dad-product-detail-p{
+    width: 100vw;
+    margin-top: 90px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-product-detail-dad{
+    width: 90vw;
+    height: 500px;
+    background: white;
+    padding: 10px 50px 20px 50px;
+    margin-top: 30px;
+}
+
+/*-----------------------------------*/
+.container-product-detail-dad .cont-child-info-product-detail{
+    margin-top: 20px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+}
+.container-similar-products{
+    margin-top: 30px;
+}

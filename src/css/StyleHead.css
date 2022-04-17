@@ -1,0 +1,194 @@
+.container-head-padre{
+    width: 100vw;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 4px #0000004a;
+    position: fixed;
+    z-index: 11;
+}
+.container-head{
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 90px;
+}
+.container-head .ctn-1{
+    width: 17%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.container-head .ctn-1 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--primary);
+   
+}
+.container-head .ctn-2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container-head .ctn-2 .container-search{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+.container-head .ctn-2 .container-search form{
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px #00000074;
+}
+.container-head .ctn-2 .container-search form input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    padding-left: 20px;
+}
+.container-head .ctn-2 .container-search form button{
+    width: 10%;
+    height: 80%;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+    text-align: center;
+    border-left: 1px solid #c8c7c7;
+    cursor: pointer;
+}
+.container-head .ctn-2 .container-head-nav-2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.container-head .ctn-2 .container-head-nav-2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    margin-right: 20px;
+}
+/* estilos de no logueado*/
+.container-head .ctn-3 {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.container-head .ctn-3 .container-nav-head a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 15px;
+}
+/*estilos de si logueado*/
+.container-head .ctn-4{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.container-head .ctn-4 .container-nav-head1{
+    position: relative;
+    width: auto;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.container-head .ctn-4 .container-nav-head1 a{
+    height: 100%;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.container-head .ctn-4 .container-nav-head1 a:hover{
+    cursor: pointer;
+}
+.container-head .ctn-4 .container-nav-head1 a i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+.container-head .ctn-4 .container-nav-head2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.container-head .ctn-4 .container-nav-head2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin-left: 40px;
+}
+/*-------------- esytilos dropdown user-------------*/
+.container-dorpdown-user{
+    position: absolute;
+    background-color: white;
+    top: 45px;
+    right: 0;
+    width: 200px;
+    height: auto;
+    box-shadow: 0px 0px 2px #cdcdcd;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 10px 0px;
+    z-index: 10;
+}
+
+.container-dorpdown-user h2{
+    font-size: 18px;
+    color: blue;
+}
+.container-dorpdown-user p{
+    font-size: 10px;
+    color: #a8a7a7;
+    margin-bottom: 10px;
+}
+.container-dorpdown-user .cont-link-profile{
+    width: 100%;
+    height: 40px;
+}
+.container-dorpdown-user .cont-link-profile .link-profile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 13px !important;
+}
+.container-dorpdown-user .cont-link-profile .link-profile:hover{
+    background-color: #efeded;
+}
+
+.container-dorpdown-user .cont-link-sing-off{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px !important;
+}
+.container-dorpdown-user .cont-link-sing-off:hover{
+    background-color: #efeded;
+    cursor: pointer;
+}
