@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import swal from 'sweetalert';
 export const actions = {
     setProducts : "SET_PRODUCTS",
     setIsLoading: "SET_IS_LOADING",
@@ -82,8 +82,23 @@ export const addCartThunk = product =>{
     return dispatch =>{
         dispatch(setIsLoading(true));
         return axios.post('https://ecommerce-api-react.herokuapp.com/api/v1/cart', product, getConfigToken())
-        .then(res=>console.log("se agrego correctamente el producto"))
-        .catch(error => console.log(error.response))
+        .then(res=>{
+            swal({
+                title: "Success",
+                text: "successfully added to cart",
+                icon: "success",
+                buttons: "Ok"
+            })
+        })
+        .catch(error => {
+            console.log(error.response);
+            swal({
+                title: "Error",
+                text: "An error occurred to be added",
+                icon: "error",
+                buttons: "Ok"
+            })
+        })
         .finally(()=> dispatch(setIsLoading(false)))
     }
 }
@@ -114,7 +129,14 @@ export const deleteCartProduct = id =>{
     return dispatch =>{
         dispatch(setIsLoading(true));
         return axios.delete(`https://ecommerce-api-react.herokuapp.com/api/v1/cart/${id}`,  getConfigToken())
-        .then(res=>console.log("se elimino el producto de carrito"))
+        .then(res=>{
+            swal({
+                title: "Success",
+                text: "successfully removed",
+                icon: "success",
+                buttons: "Ok"
+            })
+        })
         .finally(()=> {
             dispatch(getCartProductThunk());
             dispatch(setIsLoading(false))

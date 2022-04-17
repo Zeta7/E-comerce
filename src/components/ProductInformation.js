@@ -1,6 +1,7 @@
 import React from 'react';
 import  {  useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import '../css/StyleProductInformation.css';
 import { addCartThunk } from '../redux/actions';
 
@@ -10,11 +11,17 @@ const ProductInformation = ({product}) => {
     const [number, setNumber] = useState(1);
 
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
 
-    const addCart = () =>{
-        const producto = {"id": product.id, "quantity": number}
-        dispatch(addCartThunk(producto));
+    const addCart = e =>{
+        e.preventDefault();
+        if(localStorage.getItem("token") !== ""){
+            const producto = {"id": product.id, "quantity": number}
+            dispatch(addCartThunk(producto));
+        }else{
+            navigate("/singin");
+        }
     }
 
     return (

@@ -1,15 +1,21 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import { useDispatch} from 'react-redux';
 import { addCartThunk } from '../redux/actions';
 
 const ProductCard = ({product}) => {
 
     const dispatch = useDispatch();
-
-    const addShoppingCart = () =>{
-        const productAddCart = {"id": product.id, "quantity": 1};
-        dispatch(addCartThunk(productAddCart));
+    const navigate = useNavigate();
+    const addShoppingCart = e =>{
+        
+        e.preventDefault();
+        if(localStorage.getItem("token") !== ""){
+            const productAddCart = {"id": product.id, "quantity": 1};
+            dispatch(addCartThunk(productAddCart));
+        }else{
+            navigate("/singin");
+        }
     }
 
     return (

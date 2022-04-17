@@ -13,4 +13,6 @@ body{
     display: flex;
     justify-content: center;
     font-family: "Proxima Nova",-apple-system,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif,sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }

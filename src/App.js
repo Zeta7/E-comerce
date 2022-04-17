@@ -12,6 +12,7 @@ import { Home, ProductDetail, Profile, Pucharses, ShoppingCart, SingIn, CreateUs
 import LoadingScreen from './components/LoadingScreen';
 import { useSelector } from 'react-redux';
 import ProtectedRoutes from './pages/ProtectedRoutes';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
             </Route>
           </Routes>
         
+        <Footer />
       </HashRouter>
 
     </> 
