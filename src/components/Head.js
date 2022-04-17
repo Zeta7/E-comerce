@@ -45,7 +45,7 @@ const Head = () => {
                         }
                         <Link to='/singin'>Offers</Link>
                         <Link to='/singin'>Record</Link>
-                        <a href='#'>Help</a>
+                        <Link to='/singin'>Help</Link>
                     </div>
                 </div>
                 {localStorage.getItem("token")?<YesLoggetIn />:<NotLoggedIn />}
