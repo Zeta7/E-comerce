@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { useDispatch } from 'react-redux';
 
 const SingIn = () => {
 
@@ -10,9 +9,6 @@ const SingIn = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [loginError, setLoginError] = useState("");
-
-//-------------- dispatch -----------------------------------------------//
-    const dispatch = useDispatch();
 
 //-------------- Navigate -----------------------------------------------//
     const navigate = useNavigate();

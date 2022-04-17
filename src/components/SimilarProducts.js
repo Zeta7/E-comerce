@@ -16,7 +16,7 @@ const SimilarProducts = ({nameProd}) => {
                 dispatch(searchCategoriesThunk(category[i].id));
             }
         }
-    },[nameProd,dispatch])
+    },[nameProd,dispatch, category])
 
     const product = useSelector(state => state.products);
 

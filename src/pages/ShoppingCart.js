@@ -16,7 +16,7 @@ const ShoppingCart = () => {
 //------- hacer el llamado para la obtencion de los productos de carrito -----//
     useEffect(()=>{
         dispatch(getCartProductThunk())
-    },[]);
+    },[dispatch]);
 
 //----------------- contador de la suma de los totales ----------------------//
     const[total, setTotal] = useState(0);
