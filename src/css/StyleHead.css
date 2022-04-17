@@ -11,11 +11,11 @@
 .container-head{
     display: flex;
     align-items: center;
-    width: 1200px;
+    width: 90vw;
     height: 90px;
 }
 .container-head .ctn-1{
-    width: 17%;
+    width: 30%;
     height: 100%;
     display: flex;
     align-items: center;

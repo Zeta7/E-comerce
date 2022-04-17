@@ -90,15 +90,6 @@ export const addCartThunk = product =>{
                 buttons: "Ok"
             })
         })
-        .catch(error => {
-            console.log(error.response);
-            swal({
-                title: "Error",
-                text: "An error occurred to be added",
-                icon: "error",
-                buttons: "Ok"
-            })
-        })
         .finally(()=> dispatch(setIsLoading(false)))
     }
 }
